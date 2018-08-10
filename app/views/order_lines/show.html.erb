@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @order_line.order_id %>
+</p>
+
+
+<p>
+  <strong>Good:</strong>
+  <%= @order_line.good %>
+</p>
+
+
+<p>
+  <strong>Countity:</strong>
+  <%= @order_line.countity %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @order_line.price %>
+</p>
+
+<p>
+  <strong>sum:</strong>
+  <%= @order_line.sum %>
+</p>
+
+<%= link_to 'Back', '/orders/'+@order_line.order_id.to_s %> |
